@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --black:#333;
+    --darkgreen: #004225;
+    --cream: #F5F5DC;
+    --orange: #FFB000;
+    --peach: #FFCF9D;
+    --lightorange: #FFB534;
+    --ivorywhite: #FBF6EE;
+    --palelightgreen: #C1F2B0;
+    --lightgreen: #65B741;
+    --llightgreen: #6fc24c;
+    --lightbg:#eee; 
+
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+}
+
+*{
+    font-family: "Ubuntu Sans", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none !important;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+}
+
+html {
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+}
+
+body {
+    font-family: "Ubuntu Sans", sans-serif;
+    background-image: url('images/blob_bgg.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background: #FFA500;
+}
+
+/* .center-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    width: 300px;
+} */
+
+
+/* .home {
+    padding-bottom: 10rem;
+    
+}
+
+.about {
+    padding-top: 100rem;
+    padding-bottom: 20rem;
+}
+
+.contact {
+    padding-top: 0rem;
+    padding-bottom: 30rem;
+} */
+
+/* .header{
+    padding: 2rem;
+    border-bottom: var(--border);
+    box-shadow:5px 5px 5px var(--lightbg);
+} */
+
+/* .header .logo {
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: bolder;
+
+}
+
+.header .logo span{
+    color: var(--lightgreen);
+}
+
+.header .nav {
+    margin: 0 85rem;
+    font-size: 2.5rem;
+    align-items: center;
+    position: absolute;
+}
+
+.header .nav :hover {
+    background-size: 5rem;
+    color: var(--lightgreen);
+}
+
+.nav a { 
+    margin-left: 80px;
+    color: var(--black);
+} */
+
+.home {
+    padding-bottom: 10rem;
+}
+
+.h1{
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+}
+
+.h2 {
+    position: absolute;
+    top: 30rem;
+    left: 6rem;
+}
+
+/* .login form {
+    position: absolute;
+    top: 45rem;
+    left: 79rem;
+    border-radius: .5rem;
+    background-color: var(--lightbg);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+.login form, .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    padding:3rem 2rem;
+    font-size: 1.7rem;
+    color: black;
+    text-transform: none;
+}
+
+.login input {
+    padding: 10px 15px;
+}
+
+.login form span{
+    font-size: 1.7rem;
+    color: black;
+}
+
+.login hr {
+    margin: 1.5rem 0;
+}
+
+
+.loginbtn {
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+    font-weight:700;
+    color: white;
+    height: 4.5rem;
+    width: 100%;
+    background-color:var(--lightgreen) !important;
+    border-radius: .5rem;
+} */
+
+.about span {
+    font-size: 7rem;
+    font-weight: 200;
+
+}
+
+.about h2 {
+    font-size: 6rem;
+    padding: 0.5rem 0;
+    position: absolute;
+}
+
+.about p {
+    font-size: 2rem;
+    padding: 10rem 0;
+    position: absolute;
+}
+
+.contact span {
+    position: absolute;
+    font-size: 7rem;
+    font-weight: 200;
+    padding-bottom: 10rem;
+}
+
+.contact h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    padding: .5rem 0;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+/* .zxc {
+    position: absolute;
+    top: 75rem;
+} */
+
+/* create account styles start */
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1.5rem;
+    border: solid #f8f9fa;
+    padding: 1rem;
+}
+
+.form-container form {
+     padding: 30px;
+     border-radius: 28px;
+     background: #fff;
+     text-align: center;
+     width: 500px;
+     align-items: center;
+     box-shadow: 0px 16px 48px 0px rgba(0,0,0,0.176);
+
+}
+
+.name-inputs {
+    display: flex;
+    align-items: center;
+   
+}
+
+.name-inputs input {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    background: #eee;
+    border-radius: 5px;
+    padding: 12px 10px;
+    width: 100%;
+}
+
+.form-control, .form-select {
+    height: 45px;
+}
+
+.name-inputs #fname{
+    margin-right: 10px;
+}
+
+
+.others input, select{
+    margin-bottom: 10px;
+    margin-top: 7px;
+    font-size: 20px;
+    background: #eee;
+    border-radius: 5px;
+    padding: 12px 10px;
+    width: 100%;
+}
+
+.form-container form h4 {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+.form-container button {
+    margin: 25px 0 9px 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    background:var(--lightgreen) ;
+    font-weight:400;
+    color: white;
+}
+
+.form-container button:hover {
+    background:var(--lightgreen) ;
+    font-weight:700;
+    color: white;
+}
+
+.form-container p {
+    margin-top: 2px ;
+    font-size: 15px;
+}
+
+.form-container a {
+    color: blue;
+}
+
+.form-container a:hover {
+    color: var(--orange);
+}
+
+.form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.form-container form .errors-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+ .show-password-checkbox {
+     vertical-align: middle;
+ }
+
+ .checkbox-container {
+     margin-bottom: 10px;
+ }
+
+/* create account styles end */

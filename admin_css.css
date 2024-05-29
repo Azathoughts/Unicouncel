@@ -1,0 +1,168 @@
+:root{
+    --black:#333;
+    --darkgreen: #004225;
+    --cream: #F5F5DC;
+    --orange: #FFB000;
+    --peach: #FFCF9D;
+    --lightorange: #FFB534;
+    --ivorywhite: #FBF6EE;
+    --palelightgreen: #C1F2B0;
+    --lightgreen: #65B741;
+    --lightbg:#eee;
+    --lightblue:#6ab3eb; 
+    --bodybg: #F1F1F1; 
+
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+
+    --bs-body-font-family: "Ubuntu Sans" , sans-serif;
+}
+
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: "Ubuntu Sans", sans-serif;
+    background-color: #F1F1F1 !important;
+}
+
+#sidebar {
+    width: 310px;
+    background: white;
+    color: #333;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow:5px 5px 5px var(--lightbg);
+}
+
+#sidebar .name {
+    padding: 30px 20px 5px 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#sidebar .cname {
+    background-color: #fd7e14 !important;
+    color: black;
+    height: 90px;
+    padding: 20px 20px 5px 20px;    
+}
+
+#sidebar .text {
+    padding: 10px 15px 10px 18px;
+    text-align: left;
+    font-size: 18px;
+}
+#sidebar h4 {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 400;
+    padding-bottom: 23px;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    padding: 5px;
+}
+
+#sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background:var(--lightbg);
+    font-weight: 700;
+}
+
+#sidebar ul li a i {
+    margin-left: 15px;
+}
+
+nav {
+    width: calc(100% - 250px);
+    height: 90px;
+    background: #fff;
+    color: #333;
+    padding: 25px 20px;
+    position: fixed;
+    top: 0;
+    left: 310px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border);
+    box-shadow:5px 5px 5px var(--lightbg);
+}
+
+nav span {
+    color: #28a745;;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+nav h2 {
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 1.3rem;
+}
+
+.content {
+    margin-left: 300px;
+    margin-top: 110px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.box-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-info li {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.box-info li i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.side-menu h5{
+    padding-left: 28px;
+    padding-top: 25px;
+}
+
+h1 {
+    margin-left: 2rem;
+    padding-top: 0;
+}
